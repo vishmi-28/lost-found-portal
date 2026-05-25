@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Report Item - FoundIt</title>
+
+<link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+
+    <div class="logo-area">
+        <img src="images/logo.png" class="logo-img">
+    </div>
+
+    <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="browse.html">Browse</a></li>
+        <li><a href="howitworks.html">How it Works</a></li>
+        <li><a href="report.html">Report Item</a></li>
+        <li><a href="login.html" class="login-btn">Login</a></li>
+    </ul>
+
+</nav>
+
+<!-- FORM -->
+<section class="report-section">
+
+    <h1>Report Lost / Found Item</h1>
+
+    <div class="report-form">
+
+        <input type="text" id="itemName" placeholder="Item Name">
+
+        <input type="text" id="itemLocation" placeholder="Location">
+
+        <select id="itemType">
+            <option value="lost">Lost</option>
+            <option value="found">Found</option>
+        </select>
+
+        <!-- IMPORTANT FIX -->
+        <button type="button" onclick="addItem(event)">
+            Submit
+        </button>
+
+    </div>
+
+</section>
+
+<footer class="footer">
+
+    <div class="footer-container">
+
+        <!-- LEFT -->
+        <div class="footer-about">
+
+            <img src="images/logo.png" alt="FoundIt Logo" class="footer-logo">
+
+            <p>
+                FoundIt helps people reconnect with their lost belongings
+                through a smart, secure, and community-powered platform.
+            </p>
+
+        </div>
+
+        <!-- QUICK LINKS -->
+        <div class="footer-links">
+
+            <h3>Quick Links</h3>
+
+            <a href="index.html">Home</a>
+            <a href="browse.html">Browse Items</a>
+            <a href="howitworks.html">How It Works</a>
+            <a href="login.html">Login</a>
+
+        </div>
+
+        <!-- SUPPORT -->
+        <div class="footer-links">
+
+            <h3>Support</h3>
+
+            <a href="#">Help Center</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Conditions</a>
+            <a href="#">Contact Us</a>
+
+        </div>
+
+        <!-- CONTACT -->
+        <div class="footer-contact">
+
+            <h3>Get in Touch</h3>
+
+            <p>Email: support@foundit.com</p>
+            <p>Phone: +91 98765 43210</p>
+            <p>Location: Chennai, India</p>
+
+        </div>
+
+    </div>
+
+    <!-- BOTTOM -->
+    <div class="footer-bottom">
+
+        <p>© 2026 FoundIt. All Rights Reserved.</p>
+
+    </div>
+
+</footer>
+
+
+<script src="js/script.js"></script>
+
+</body>
+</html>

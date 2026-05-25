@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Browse Items - FoundIt</title>
+
+<link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+
+    <div class="logo-area">
+        <img src="images/logo.png" class="logo-img">
+    </div>
+
+    <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="browse.html">Browse</a></li>
+        <li><a href="howitworks.html">How it Works</a></li>
+        <li><a href="report.html">Report Item</a></li>
+        <li><a href="login.html" class="login-btn">Login</a></li>
+    </ul>
+
+</nav>
+
+<!-- HERO -->
+<section class="browse-hero">
+    <h1>Browse Lost & Found Items</h1>
+    <p>Search items reported by our community</p>
+</section>
+
+<!-- SEARCH + FILTER -->
+<section class="search-filter-section">
+
+    <div class="search-filter-container">
+
+        <!-- SEARCH -->
+        <div class="search-box-wrapper">
+            <input 
+                type="text"
+                id="searchInput"
+                placeholder="Search items..."
+                class="search-box"
+            >
+        </div>
+
+        <!-- CATEGORY -->
+        <select class="filter" id="categoryFilter">
+            <option value="all">All Categories</option>
+            <option value="electronics">Electronics</option>
+            <option value="wallet">Wallets</option>
+            <option value="id">ID Cards</option>
+            <option value="keys">Keys</option>
+            <option value="bag">Bags</option>
+        </select>
+
+        <!-- LOCATION -->
+        <select class="filter" id="locationFilter">
+            <option value="all">All Locations</option>
+            <option value="library">Library</option>
+            <option value="cafeteria">Cafeteria</option>
+            <option value="parking">Parking Area</option>
+            <option value="auditorium">Auditorium</option>
+        </select>
+
+        <!-- STATUS -->
+        <select class="filter" id="statusFilter">
+            <option value="all">All Status</option>
+            <option value="lost">Lost</option>
+            <option value="found">Found</option>
+        </select>
+
+    </div>
+
+</section>
+
+<!-- ITEMS GRID -->
+<section class="browse-items-section">
+
+<div class="items-grid">
+
+    <!-- ITEM 1 -->
+    <div class="item-card" data-type="found" data-category="electronics" data-location="library">
+        <span class="tag found">FOUND</span>
+        <img src="images/phone.jpg" alt="Phone">
+
+        <div class="item-info">
+            <h3>iPhone 13</h3>
+            <p class="location">📍 Library</p>
+            <p class="date">Posted Today</p>
+            <button class="details-btn">View Details</button>
+        </div>
+    </div>
+
+    <!-- ITEM 2 -->
+    <div class="item-card" data-type="lost" data-category="wallet" data-location="cafeteria">
+        <span class="tag lost">LOST</span>
+        <img src="images/wallet.jpg" alt="Wallet">
+
+        <div class="item-info">
+            <h3>Black Wallet</h3>
+            <p class="location">📍 Cafeteria</p>
+            <p class="date">Posted 2 hours ago</p>
+            <button class="details-btn">View Details</button>
+        </div>
+    </div>
+
+    <!-- ITEM 3 -->
+    <div class="item-card" data-type="found" data-category="keys" data-location="parking">
+        <span class="tag found">FOUND</span>
+        <img src="images/keys.jpeg" alt="Keys">
+
+        <div class="item-info">
+            <h3>Key Bundle</h3>
+            <p class="location">📍 Parking Area</p>
+            <p class="date">Posted Yesterday</p>
+            <button class="details-btn">View Details</button>
+        </div>
+    </div>
+
+    <!-- ITEM 4 -->
+    <div class="item-card" data-type="lost" data-category="bottle" data-location="auditorium">
+        <span class="tag lost">LOST</span>
+        <img src="images/bottle.jpg" alt="Bottle">
+
+        <div class="item-info">
+            <h3>Water Bottle</h3>
+            <p class="location">📍 Auditorium</p>
+            <p class="date">Posted 1 day ago</p>
+            <button class="details-btn">View Details</button>
+        </div>
+    </div>
+
+    <!-- ITEM 5 -->
+    <div class="item-card" data-type="found" data-category="electronics" data-location="library">
+        <span class="tag found">FOUND</span>
+        <img src="images/camera.jpg" alt="Camera">
+
+        <div class="item-info">
+            <h3>Canon Camera</h3>
+            <p class="location">📍 Library Desk</p>
+            <p class="date">Posted Today</p>
+            <button class="details-btn">View Details</button>
+        </div>
+    </div>
+
+    <!-- ITEM 6 -->
+    <div class="item-card" data-type="lost" data-category="id" data-location="library">
+        <span class="tag lost">LOST</span>
+        <img src="images/idcard.jpg" alt="ID Card">
+
+        <div class="item-info">
+            <h3>College ID Card</h3>
+            <p class="location">📍 Main Gate</p>
+            <p class="date">Posted 3 hours ago</p>
+            <button class="details-btn">View Details</button>
+        </div>
+    </div>
+
+    <!-- ITEM 7 -->
+    <div class="item-card" data-type="found" data-category="electronics" data-location="classroom">
+        <span class="tag found">FOUND</span>
+        <img src="images/pendrive.jpg" alt="Pendrive">
+
+        <div class="item-info">
+            <h3>Pendrive</h3>
+            <p class="location">📍 C3 Classroom</p>
+            <p class="date">Posted Yesterday</p>
+            <button class="details-btn">View Details</button>
+        </div>
+    </div>
+
+    <!-- ITEM 8 -->
+    <div class="item-card" data-type="lost" data-category="watch" data-location="ground">
+        <span class="tag lost">LOST</span>
+        <img src="images/watch.jpg" alt="Watch">
+
+        <div class="item-info">
+            <h3>Watch</h3>
+            <p class="location">📍 Ground</p>
+            <p class="date">Posted 5 hours ago</p>
+            <button class="details-btn">View Details</button>
+        </div>
+    </div>
+
+</div>
+
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+
+    <div class="footer-container">
+
+        <div class="footer-about">
+            <img src="images/logo.png" class="footer-logo">
+            <p>FoundIt helps people reconnect with their lost belongings through a smart platform.</p>
+        </div>
+
+        <div class="footer-links">
+            <h3>Quick Links</h3>
+            <a href="index.html">Home</a>
+            <a href="browse.html">Browse Items</a>
+            <a href="howitworks.html">How It Works</a>
+            <a href="login.html">Login</a>
+        </div>
+
+        <div class="footer-links">
+            <h3>Support</h3>
+            <a href="#">Help Center</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms</a>
+            <a href="#">Contact</a>
+        </div>
+
+        <div class="footer-contact">
+            <h3>Get in Touch</h3>
+            <p>Email: support@foundit.com</p>
+            <p>Phone: +91 98765 43210</p>
+            <p>Location: Chennai, India</p>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <p>© 2026 FoundIt. All Rights Reserved.</p>
+    </div>
+
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>

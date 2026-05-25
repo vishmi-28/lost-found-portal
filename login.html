@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Login - FoundIt</title>
+
+<link rel="stylesheet" href="css/styles.css">
+
+<style>
+
+/* LOGIN PAGE */
+.login-page{
+    min-height:100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    padding:120px 20px 60px;
+
+    background:
+    linear-gradient(
+        rgba(255,255,255,0.75),
+        rgba(255,255,255,0.75)
+    ),
+    url("images/hero.png");
+
+    background-size:cover;
+    background-position:center;
+}
+
+/* LOGIN CARD */
+.login-card{
+    width:100%;
+    max-width:450px;
+
+    background:white;
+
+    padding:45px;
+
+    border-radius:30px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,0.08);
+
+    text-align:center;
+}
+
+/* TITLE */
+.login-card h1{
+    font-size:42px;
+
+    color:#0B2E4E;
+
+    margin-bottom:10px;
+}
+
+/* SUBTITLE */
+.login-card p{
+    color:#64748b;
+
+    margin-bottom:35px;
+
+    font-size:16px;
+}
+
+/* INPUTS */
+.login-input{
+    width:100%;
+
+    padding:16px 18px;
+
+    margin-bottom:20px;
+
+    border:none;
+
+    border-radius:14px;
+
+    background:#f1f5f9;
+
+    font-size:16px;
+
+    outline:none;
+}
+
+/* BUTTON */
+.login-submit{
+    width:100%;
+
+    padding:16px;
+
+    border:none;
+
+    border-radius:14px;
+
+    background:#00A8A8;
+
+    color:white;
+
+    font-size:17px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:0.3s;
+}
+
+.login-submit:hover{
+    background:#007c7c;
+}
+
+/* SIGNUP TEXT */
+.signup-text{
+    margin-top:22px;
+
+    color:#64748b;
+}
+
+.signup-text a{
+    color:#ff7a59;
+
+    text-decoration:none;
+
+    font-weight:600;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+
+    <div class="logo-area">
+        <img src="images/logo.png" class="logo-img">
+    </div>
+
+    <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="browse.html">Browse</a></li>
+        <li><a href="howitworks.html">How it Works</a></li>
+        <li><a href="report.html">Report Item</a></li>
+        <li><a href="login.html" class="login-btn">Login</a></li>
+    </ul>
+
+</nav>
+
+<!-- LOGIN SECTION -->
+<section class="login-page">
+
+    <div class="login-card">
+
+        <h1>Welcome Back</h1>
+
+        <p>Login to continue using FoundIt</p>
+
+        <form>
+
+            <input 
+                type="email"
+                placeholder="Enter your email"
+                class="login-input"
+            >
+
+            <input 
+                type="password"
+                placeholder="Enter your password"
+                class="login-input"
+            >
+
+            <button class="login-submit">
+                Login
+            </button>
+
+        </form>
+
+        <div class="signup-text">
+            Don’t have an account?
+            <a href="#">Sign Up</a>
+        </div>
+
+    </div>
+
+</section>
+<script src="js/script.js"></script>
+</body>
+</html>
